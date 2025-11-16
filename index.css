@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* object-fit: cover; */
 }
 
 html,
@@ -10,20 +11,20 @@ body {
   height: 100%;
 }
 
-.body{
-  background-image: url('Images/Untitled_design.png');
-  /* background-color: #aa9ff3; */
+.mother{
+  /* background-image: url('Images/Untitled_design.png'); */
+  background-color: #050710;
   height: 100%;
   width: 100%;
   object-fit: cover;
-  display: relative;
+  position: relative;
 }
 
 .header {
   position:sticky;
   display: flex;
   justify-content: space-around;
-  background-color: white;
+  background-color: #333543;
   height: 50px;
   width: 60%;
   top: 20px;
@@ -33,7 +34,7 @@ body {
   
 }
 .headerele {
-  background-color: orange;
+  background-color: #5b5f73;
   justify-self: center;
   align-self: center;
   text-align: center;
@@ -44,15 +45,18 @@ body {
   padding: 10px;
   display: flex;
 }
+.headerele>a{
+  text-align: center;
+}
 .logo {
   /* border: 2px solid; */
-  width: 20%px;
+  width: 20px;
   height: 50px;
   align-items: center;
   margin: 0px;
   position:absolute;
   margin-left: 40px;
-  margin-top: 25px;
+  margin-top: 0px;
 }
 #payoraa_logo{
   width: 120px;
@@ -60,21 +64,26 @@ body {
   
 }
 .recharge{
-  background-color: grey;
-
-.recharge > a{
+ 
+  align-self: center;
+}
+.headerele:hover{
+  background-color: #a098c7;
+}
+.recharge a{
   text-decoration: none;
   color: aliceblue;
-}
+  text-align: center;
+
 }
 .travel {
-  background-color:grey;
+  
 }
 .credit {
-  background-color:grey;
+
 }
 .login {
-  background-color:grey;
+ 
   display: absolute;
   right: 5px;
 }
@@ -88,14 +97,125 @@ body {
 .container{
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 800px 800px 400px;
+  grid-template-rows: 5fr 5fr 1fr;
 }
 .hero{
-
+  height: 600px;
+  margin-top: 20px;
+  /* background-color:pink; */
+  opacity: 1;
+  top: 20%;
+  /* position: absolute; */
+  width: 90%;
+  border: 2px solid;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+  display: grid;
+  grid-template-areas:"ha11 ha11 ha11"  ;
 }
+.herotabs{
+  /* border: 2px solid white; */
+ margin: 20px;
+ border-radius: 10px;
+}
+.ha1{
+ grid-area: ha11;
+ height: 500px;
+ background-color: #10111a;
+ text-align: center;
+ color: white;
+}
+.ha1:hover{
+  background-color: #a098c7;
+  color:#050710;
+}
+#text1{
+  font-size: 80px;
+  text-align: center;
+}
+#text2{
+font-size: 300px;
+text-align: center;
+}
+#changetheway{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ha2{
+ grid-area: ha22;
+}
+
+.ha3{
+grid-area: ha33;
+}
+
 .useful{
-
+  height: 800px;
+background-color:#10111a;
+/* position: absolute; */
+width: 100%;
+   display: flex;
+   justify-content: center;
 }
-.footer{
+.boxs{
+   border: 1px solid white;
+   border-radius: 30px;
+   margin: 15px;
+   background-color: #1b1d27;
+   object-fit: cover;
+   width: 30vw;
+}
+.boxs:hover{
+  background-color: #333543;
+}
+.cc{
+  grid-area: cc;
+  border: 1px solid;
+  width: 3.3fr;
   
 }
+.textcc1{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.rc{
+  grid-area: rc;
+  border: 1px solid;
+  width: 3.3fr;
+}
+.textrc1{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+.trv{
+  grid-area: trv;
+  border: 1px solid;
+  width: 3.3fr;
+}
+.texttrv1{
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+.footer{
+  height: 100px;
+  width: 100%;
+background-color: gray;
+position: absolute;
+text-align: center;
+}
+.footertext{
+  font-size: 50px;
+  margin: auto;
+}
+
+
+
+
+
