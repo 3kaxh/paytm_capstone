@@ -76,7 +76,7 @@ body {
 .login {
   background-color:grey;
   display: absolute;
-  right: 0px;
+  right: 5px;
 }
 #payorapng {
   width: 80px;
@@ -85,3 +85,17 @@ body {
 }
 
 
+.container{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 800px 800px 400px;
+}
+.hero{
+
+}
+.useful{
+
+}
+.footer{
+  
+}
