@@ -1,7 +1,7 @@
 .google-sans-code {
   font-family: "Google Sans Code", monospace;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 700;
   font-style: normal;
 }
 .notable-regular {
@@ -18,6 +18,6 @@
 .stack-sans-text{
   font-family: "Stack Sans Text", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 700;
   font-style: normal;
 }

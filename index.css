@@ -20,28 +20,26 @@ body {
   position: relative;
 }
 
-.header {
-  position:sticky;
+.right{
   display: flex;
-  justify-content: space-around;
-  background-color: #333543;
-  height: 50px;
-  width: 60%;
-  top: 20px;
-  left: 20%;
-  border-radius: 50px;
-  box-sizing: border-box;
-  
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #000;
 }
 .headerele {
   background-color: #5b5f73;
-  justify-self: center;
-  align-self: center;
+  justify-content: center;
+  align-content: center;
   text-align: center;
   margin-left: 10px;
   border-radius: 50px;
   height: 40px;
-  width: 600px;
+  width: 10vw;
   padding: 10px;
   display: flex;
 }
@@ -50,13 +48,15 @@ body {
 }
 .logo {
   /* border: 2px solid; */
-  width: 20px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   align-items: center;
-  margin: 0px;
-  position:absolute;
   margin-left: 40px;
   margin-top: 0px;
+  font-size: 2rem;
 }
 #payoraa_logo{
   width: 120px;
@@ -127,13 +127,15 @@ body {
  text-align: center;
  color: white;
 }
-.ha1:hover{
+/* .ha1:hover{
   background-color: #a098c7;
+  opacity: 0.7;
   color:#050710;
-}
+} */
 #text1{
   font-size: 80px;
   text-align: center;
+  color: #a098c7;
 }
 #text2{
 font-size: 300px;
@@ -219,3 +221,36 @@ text-align: center;
 
 
 
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #000;
+  height: 100%;
+}
+
+.rechargebox{
+  width: 60vw;
+  height: 80vh;
+  border: 2px solid;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: space-evenly;
+  background-color: #a098c7;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+input{
+  width: 400px;
+  height: 30px;
+}
