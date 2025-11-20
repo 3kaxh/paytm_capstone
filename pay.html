@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Eater&family=Freckle+Face&family=Frijole&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Hanalei&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Maze&family=Rubik+Puddles&family=Space+Grotesk:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments</title>
+    <link rel="stylesheet" href="pay.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="headerbar.css">
+</head>
+<body>
+    <div class="body">
+      <!-- header html code -->
+        <div class="header google-sans-flex">
+          <div class="logo">
+            <!-- <img src="Images/payora_transp.png" id="payoraa_logo"> -->
+            <a
+              href="index.html"
+              class="frijole-regular"
+              style="
+                text: size 30px;
+                text-decoration: none;
+                padding: 20px;
+                color: white;
+              "
+              >Payora</a
+            >
+          </div>
+          <div class="right">
+            <!-- Navbar Elements -->
+            <div class="headerele paymentspage currentpage">
+              <a style="text-decoration: none; class="navlinktext currentpage" href="pay.html">
+                Payment
+              </a>
+            </div>
+            <div class="headerele recharge">
+              <a style="text-decoration: none; class="navlinktext" color: white"
+                href="recharge.html">
+                Recharge
+              </a>
+            </div>
+            <div class="headerele travel">
+              <a style="text-decoration: none; class="navlinktext"  color: white" href="travel.html"
+                >Travel</a
+              >
+            </div>
+            <div class="headerele credit">
+              <a style="text-decoration: none; class="navlinktext"  color: white" href="credit.html"
+                >Credit Card</a
+              >
+            </div>
+          </div>
+          <div class="headerele login">
+            <a style="text-decoration: none; class="navlinktext"  color: white" href="login.html"
+              >Login</a
+            >
+          </div>
+        </div>
+
+
+
+
+
+
+         <!-- header html code ends-->
+          <!-- main body code here  -->
+          <div class="paydiv">
+            <div class="paybody leftsidepay ">
+              <h1 class="leftsidehtext poppins-bold">Send Money</h1>
+              <h1 class="leftsidehtext poppins-bold"> to UPI ID</h1>
+              <p class="leftsideptext urbanist">Send money to UPI ID from our website or mobile app, in just a few clicks. Join over 1000 people who choose Payora for fast and secure money transfers.
+</p>
+            </div>
+          <div class="paybody rightsidepay google-sans-flex">
+            <h6 >🔒 Secured Payments</h6>
+            <form action="post" class="payment-form ">
+              <label class="form-content" style="font-size: 25px;" style="" for="upiid"> Enter UPI ID</label>
+              <input class="form-content" style="height: 70px;border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 25px;" type="text" id="upiid" name="upiid" placeholder="  VijayMallya@upi">
+              <label class="form-content" style="font-size: 25px;" for="amt"> Amount</label>
+              <input class="form-content" style="height: 70px; border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 25px;" type="number" id="amt" name="amt" placeholder="  Amount">
+               <label class="form-content" style="font-size: 25px;" for="remarks"> Remarks</label>
+              <input class="form-content" style="height: 70px;border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 25px;" type="text" id="remarks" name="remarks" placeholder="  Paying For">
+              <button class="form-content" style="font-size: 25px;border: 1px solid #6f636d;  border-radius: 15px; text-align: center; height: 70px; background-color: #392f41; color: #ebe7df;" type="submit">Pay Securely</button>
+            </form>
+            <h5> Secured by Payora, Powered by NPCI</h5>
+          </div>
+          </div>
+      </div>
+</body>
+</html>

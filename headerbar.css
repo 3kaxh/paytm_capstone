@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* object-fit: cover; */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.right{
+  display: flex;
+}
+
+.header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #392f41;
+}
+.headerele {
+  background-color: #6f636d;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin-left: 10px;
+  border-radius: 50px;
+  height: 40px;
+  width: 10vw;
+  padding: 10px;
+  display: flex;
+}
+.headerele>a{
+  text-align: center;
+  color: #ebe7df;
+}
+.logo {
+  /* border: 2px solid; */
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 0px;
+  font-size: 2rem;
+}
+#payoraa_logo{
+  width: 120px;
+  height: 50px;
+  
+}
+.recharge{
+ 
+  align-self: center;
+}
+.headerele:hover{
+  background-color: #ebe7df;
+  a{
+    color:#392f41;
+  }
+}
+.currentpage{
+  background-color: #ebe7df;
+  a{
+    color:#392f41;
+  }
+}
+.navlinktext:hover{
+}
+.recharge a{
+ 
+}
+.travel {
+  
+}
+.credit {
+
+}
+.login {
+ 
+  display: absolute;
+  right: 5px;
+}
+#payorapng {
+  width: 80px;
+  height: 40px;
+  margin: auto;
+}

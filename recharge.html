@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recharge</title>
-    <link rel="stylesheet" href="index.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Eater&family=Freckle+Face&family=Frijole&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Hanalei&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Maze&family=Rubik+Puddles&family=Space+Grotesk:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="recharge.css">
     <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="headerbar.css">
 </head>
 <body>
-    <div class="header notable-regular stack-sans-text google-sans-code">
+  <div class="body">
+    <div class="header google-sans-flex">
           <div class="logo">
             <!-- <img src="Images/payora_transp.png" id="payoraa_logo"> -->
             <a
               href="index.html"
-              class="notable-regular"
+              class="frijole-regular"
               style="
                 text: size 30px;
                 text-decoration: none;
@@ -24,51 +29,65 @@
             >
           </div>
           <div class="right">
-            <div class="headerele recharge">
-              <a
-                style="text-decoration: none; color: white"
-                href="recharge.html"
-                >Recharge</a
-              >
+            <!-- Navbar Elements -->
+            <div class="headerele paymentspage ">
+              <a style="text-decoration: none; class="navlinktext " href="pay.html">
+                Payment
+              </a>
+            </div>
+            <div class="headerele recharge currentpage">
+              <a style="text-decoration: none; class="navlinktext currentpage"
+                href="recharge.html">
+                Recharge
+              </a>
             </div>
             <div class="headerele travel">
-              <a style="text-decoration: none; color: white" href="travel.html"
+              <a style="text-decoration: none; class="navlinktext"  href="travel.html"
                 >Travel</a
               >
             </div>
             <div class="headerele credit">
-              <a style="text-decoration: none; color: white" href="credit.html"
+              <a style="text-decoration: none; class="navlinktext"  href="credit.html"
                 >Credit Card</a
               >
             </div>
           </div>
           <div class="headerele login">
-            <a style="text-decoration: none; color: white" href="login.html"
+            <a style="text-decoration: none; class="navlinktext"  color: white" href="login.html"
               >Login</a
             >
           </div>
         </div>
-    <main>
-        <div>
-            <h1>Recharge Now</h1>
-        </div>
-        <div class="rechargebox">
-            <form action="">
-                <label for="no">
-                    Mobile No:
-                </label>
-                <input type="text" name="" id="no">
-                <label for="isp">
-                    ISP
-                </label>
-                <input type="text" name="" id="isp">
-                <label for="am">
-                    Recharge Amount
-                </label>
-                <input type="text" name="" id="am">
-                <button>Pay</button>
+        <div class="mainsec">
+          <div class="paydiv">
+            <div class="paybody leftsidepay ">
+              <h1 class="leftsidehtext poppins-bold">Recharge</h1>
+              <h1 class="leftsidehtext poppins-bold">Get Your Mobile Recharged in Seconds</h1>
+              <p class="leftsideptext urbanist">Choose your operator, Enter your number, and Pick a plan. That’s it.
+                <ul>
+                  <li class="leftsideptext urbanist">Prepaid & Postpaid supported</li>
+                  <li class="leftsideptext urbanist">All major operators available</li>
+                  <li class="leftsideptext urbanist">Instant confirmation</li>
+                </ul>
+            </div>
+          <div class="paybody rightsidepay google-sans-flex">
+            <h6 >⚡ Instant Recharge</h6>
+            <form action="post" class="payment-form">
+              <label class="form-content" style="font-size: 25px;" style="" for="no"> Enter Mobile Number</label>
+              <input class="form-content" style="height: 70px;border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 25px;" type="text" id="no" name="no" placeholder=" +91 69000 00069">
+
+               <label class="form-content" style="font-size: 25px;" for="opeerator"> Operator</label>
+              <input class="form-content" style="height: 70px;border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 25px;" type="text" id="operator" name="operator" placeholder="  Jio- Delhi">
+
+              <label class="form-content" style="font-size: 25px;" for="amt">Recharge Plan</label>
+              <input class="form-content" style="height: 70px; border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 25px;" type="number" id="amt" name="amt" placeholder="  Select Recharge Plan Amount">
+              
+              <button class="form-content" style="font-size: 25px;border: 1px solid #6f636d;  border-radius: 15px; text-align: center; height: 70px; background-color: #392f41; color: #ebe7df;" type="submit">Pay to Recharge in Seconds</button>
             </form>
+            <h5> Secured by Payora, Powered by NPCI</h5>
+          </div>
+          </div>
         </div>
-    </main>
+        </div>
 </body>
 </html>

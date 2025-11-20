@@ -10,18 +10,23 @@
       href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Monoton&family=Notable&family=Poller+One&family=Slabo+13px&family=Stack+Sans+Text:wght@200..700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Eater&family=Freckle+Face&family=Frijole&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Hanalei&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Maze&family=Rubik+Puddles&family=Space+Grotesk:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="headerbar.css">
+    <link rel="stylesheet" href="footer.css">
   </head>
   <body>
     <div class="mother">
       <div class="body">
-        <div class="header stack-sans-text google-sans-code">
+        <!-- NAVBAR HTML BEGINS  -->
+        <div class="header google-sans-flex">
           <div class="logo">
-            <!-- <img src="Images/payora_transp.png" id="payoraa_logo"> -->
             <a
               href="index.html"
-              class="notable-regular"
+              class="frijole-regular "
               style="
                 text: size 30px;
                 text-decoration: none;
@@ -32,46 +37,51 @@
             >
           </div>
           <div class="right">
+            <!-- Navbar Elements -->
+            <div class="headerele paymentspage ">
+              <a style="text-decoration: none; class="navlinktext currentpage" color: white" href="pay.html">
+                Payment
+              </a>
+            </div>
             <div class="headerele recharge">
-              <a
-                style="text-decoration: none; color: white"
-                href="recharge.html"
-                >Recharge</a
-              >
+              <a style="text-decoration: none; class="navlinktext" color: white"
+                href="recharge.html">
+                Recharge
+              </a>
             </div>
             <div class="headerele travel">
-              <a style="text-decoration: none; color: white" href="travel.html"
+              <a style="text-decoration: none; class="navlinktext"  color: white" href="travel.html"
                 >Travel</a
               >
             </div>
             <div class="headerele credit">
-              <a style="text-decoration: none; color: white" href="credit.html"
+              <a style="text-decoration: none; class="navlinktext"  color: white" href="credit.html"
                 >Credit Card</a
               >
             </div>
           </div>
           <div class="headerele login">
-            <a style="text-decoration: none; color: white" href="login.html"
+            <a style="text-decoration: none; class="navlinktext"  color: white" href="login.html"
               >Login</a
             >
           </div>
         </div>
-      </div>
+        <!-- NAVBAR ENDS  -->
+        <!-- HERO SECTION BEGINS -->
       <div class="conainer">
         <div class="hero">
           <div class="herotabs ha1">
-            <p class="notable-regular" id="text1">Change the way You</p>
-            <p class="monoton-regular" id="text2">PAY</p>
-            <!-- <img id="changetheway" src="Images/Change the way.png"  alt=""> -->
+            <p class="rubik-maze-regular" id="text1">Instant Payments</p>
+            <p class="frijole-regular" id="text2">Infinite Convenience</p>
           </div>
           <!-- <div class="herotabs ha2"></div>
     <div class="herotabs ha3"></div> -->
         </div>
         <div class="useful google-sans-code">
           <div class="boxs cc">
-            <p class="textcc1 notable-regular">Credit Card</p>
+            <p class="textcc1 frijole-regular">Credit Card</p>
             <br />
-            <p class="textcc1" style="font-size: 30px">Get Your's Now</p>
+            <p class="textcc1 google-sans-flex" style="font-size: 30px">Get Your's Now</p>
             <img
               width="500px"
               style="padding: 50px"
@@ -80,9 +90,9 @@
             />
           </div>
           <div class="boxs rc">
-            <p class="textrc1 notable-regular">Recharge Now</p>
+            <p class="textrc1 frijole-regular">Recharge</p>
             <br />
-            <p class="textrc1" style="font-size: 30px">
+            <p class="textrc1 google-sans-flex" style="font-size: 30px">
               Connect with your Loved Ones
             </p>
             <img
@@ -93,9 +103,9 @@
             />
           </div>
           <div class="boxs trv">
-            <p class="texttrv1 notable-regular">Travel</p>
+            <p class="texttrv1 frijole-regular">Travel</p>
             <br />
-            <p class="texttrv1" style="font-size: 30px">Live your Dreams</p>
+            <p class="texttrv1 google-sans-flex" style="font-size: 30px">Live your Dreams</p>
             <img
               width="500px"
               style="padding: 50px"
@@ -106,7 +116,7 @@
         </div>
 
         <div class="footer">
-          <p class="footertext">Capstone Project Built by Akash Pansari</p>
+          <p class="footertext">© 2025 Capstone Project. Built with passion and purpose.</p>
         </div>
       </div>
     </div>

@@ -13,117 +13,39 @@ body {
 
 .mother{
   /* background-image: url('Images/Untitled_design.png'); */
-  background-color: #050710;
+  /* background-color: #050710; */
+  background-color: #392f41;
   height: 100%;
   width: 100%;
   object-fit: cover;
   position: relative;
 }
 
-.right{
-  display: flex;
-}
-
-.header {
-  padding: 20px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #000;
-}
-.headerele {
-  background-color: #5b5f73;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  margin-left: 10px;
-  border-radius: 50px;
-  height: 40px;
-  width: 10vw;
-  padding: 10px;
-  display: flex;
-}
-.headerele>a{
-  text-align: center;
-}
-.logo {
-  /* border: 2px solid; */
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  align-items: center;
-  margin-left: 40px;
-  margin-top: 0px;
-  font-size: 2rem;
-}
-#payoraa_logo{
-  width: 120px;
-  height: 50px;
-  
-}
-.recharge{
- 
-  align-self: center;
-}
-.headerele:hover{
-  background-color: #a098c7;
-}
-.recharge a{
-  text-decoration: none;
-  color: aliceblue;
-  text-align: center;
-
-}
-.travel {
-  
-}
-.credit {
-
-}
-.login {
- 
-  display: absolute;
-  right: 5px;
-}
-#payorapng {
-  width: 80px;
-  height: 40px;
-  margin: auto;
-}
-
-
 .container{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 5fr 5fr 1fr;
 }
+
 .hero{
   height: 600px;
   margin-top: 20px;
-  /* background-color:pink; */
   opacity: 1;
   top: 20%;
-  /* position: absolute; */
   width: 90%;
-  border: 2px solid;
+  /* border: 2px solid; */
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   margin: auto;
   margin-top: 20px;
-  display: grid;
-  grid-template-areas:"ha11 ha11 ha11"  ;
 }
 .herotabs{
-  /* border: 2px solid white; */
  margin: 20px;
- border-radius: 10px;
+ border-top-left-radius: 60px;
+ border-bottom-right-radius: 60px;
+ align-content: center;
+ /* border-radius: 20px; */
 }
 .ha1{
- grid-area: ha11;
  height: 500px;
- background-color: #10111a;
+ background-color: #121212;
  text-align: center;
  color: white;
 }
@@ -133,13 +55,14 @@ body {
   color:#050710;
 } */
 #text1{
-  font-size: 80px;
+  font-size: 90px;
   text-align: center;
-  color: #a098c7;
+  color: #ebe7df;
 }
 #text2{
-font-size: 300px;
+font-size: 120px;
 text-align: center;
+color: #ebe7df;
 }
 #changetheway{
   width: 100%;
@@ -156,8 +79,9 @@ grid-area: ha33;
 
 .useful{
   height: 800px;
-background-color:#10111a;
-/* position: absolute; */
+background-color:#121212;
+border-top-left-radius: 60px;
+border-top-right-radius: 40px;
 width: 100%;
    display: flex;
    justify-content: center;
@@ -166,12 +90,12 @@ width: 100%;
    border: 1px solid white;
    border-radius: 30px;
    margin: 15px;
-   background-color: #1b1d27;
+   background-color: #392f41;
    object-fit: cover;
    width: 30vw;
 }
 .boxs:hover{
-  background-color: #333543;
+  background-color:#232222;
 }
 .cc{
   grid-area: cc;

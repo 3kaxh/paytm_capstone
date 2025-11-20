@@ -4,61 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recharge</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Monoton&family=Notable&family=Poller+One&family=Slabo+13px&family=Stack+Sans+Text:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Eater&family=Freckle+Face&family=Frijole&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Hanalei&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Maze&family=Rubik+Puddles&family=Space+Grotesk:wght@300..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="travel.css">
     <link rel="stylesheet" href="fonts.css">
-
+    <link rel="stylesheet" href="headerbar.css">
 </head>
 <body>
-    <div class="mother">
-<div class="body">
-    <div class="logo">
-        <!-- <img src="Images/payora_transp.png" id="payoraa_logo"> -->
-        <a href="index.html" class="notable-regular" style=" text: size 30px; text-decoration: none;padding:20px;color: white;">Payora</a>
-    </div>
-<div class="header stack-sans-text google-sans-code">
-    <div class="headerele recharge"> <a style="text-decoration: none; color: white;" href="recharge.html">Recharge</a></div>
-<div class="headerele travel"><a style="text-decoration: none; color: white;" href="travel.html">Travel</a></div>
-<div class="headerele credit"><a style="text-decoration: none; color: white;" href="credit.html">Credit</a></div>
-<div class="headerele login"><a style="text-decoration: none; color: white;" href="login.html">Login</a></div>
-</div></div>
-<div class="conainer">
-<div class="hero">
-    <div class="herotabs ha1">
-       <p class="notable-regular" id="text1"> Change the way You </p>
-       <p class="monoton-regular" id="text2">PAY</p>
-        <!-- <img id="changetheway" src="Images/Change the way.png"  alt=""> -->
-    </div>
-    <!-- <div class="herotabs ha2"></div>
-    <div class="herotabs ha3"></div> -->
-</div>
-<div class="useful google-sans-code">
-    <div class="boxs cc">
-        <p class="textcc1 notable-regular">Credit Card</p>
-        <br>
-        <p class="textcc1 " style="font-size: 30px;">Get Your's Now</p>
-        <img width="500px" style="padding: 50px;" src="Images/creditcardimage.png" alt="">
-    </div>
-    <div class="boxs rc">
-        <p class="textrc1 notable-regular">Recharge Now</p>
-        <br>
-        <p class="textrc1" style="font-size: 30px;">Connect with your Loved Ones</p>
-        <img width="500px" style="padding: 50px;" src="Images/rechargenow.png" alt="">
-    </div> 
-    <div class="boxs trv">
-        <p class="texttrv1 notable-regular">Travel</p>
-        <br>
-        <p class="texttrv1" style="font-size: 30px;">Live your Dreams</p>
-         <img width="500px" style="padding: 50px;" src="Images/travel.png" alt="">
-    </div>
-</div>
+  <div class="body">
+    <div class="header google-sans-flex">
+          <div class="logo">
+            <a
+              href="index.html"
+              class="frijole-regular"
+              style="
+                text: size 30px;
+                text-decoration: none;
+                padding: 20px;
+                color: white;
+              "
+              >Payora</a
+            >
+          </div>
+          <div class="right">
+            <!-- Navbar Elements -->
+            <div class="headerele paymentspage ">
+              <a style="text-decoration: none; class="navlinktext " href="pay.html">
+                Payment
+              </a>
+            </div>
+            <div class="headerele recharge ">
+              <a style="text-decoration: none; class="navlinktext currentpage"
+                href="recharge.html">
+                Recharge
+              </a>
+            </div>
+            <div class="headerele travel currentpage">
+              <a style="text-decoration: none; class="navlinktext"  href="travel.html"
+                >Travel</a
+              >
+            </div>
+            <div class="headerele credit">
+              <a style="text-decoration: none; class="navlinktext"  href="credit.html"
+                >Credit Card</a
+              >
+            </div>
+          </div>
+          <div class="headerele login">
+            <a style="text-decoration: none; class="navlinktext"  color: white" href="login.html"
+              >Login</a
+            >
+          </div>
+        </div>
+        <div class="mainsec">
+          <div class="paydiv">
+            <div class="paybody leftsidepay ">
+              <h1 class="leftsidehtext poppins-bold">Travel More</h1>
+              <h1 class="leftsidehtext poppins-bold">Where Do You Want to Go Next?</h1>
+              <p class="leftsideptext urbanist">Everything You Need, All in One Place</p>
+                <ul style="list-style-type: none;">
+                  <li class="leftsideptext urbanist">⚡ Instant Bookings</li>
+                  <li class="leftsideptext urbanist">🔒 Secure Payments</li>
+                  <li class="leftsideptext urbanist">💬 24×7 Support</li>
+                   <li class="leftsideptext urbanist">💼 Smart Cancellations</li>
+                </ul>
+            </div>
+          <div class="paybody rightsidepay google-sans-flex">
+            <h6 >BOOK TICKET</h6>
+            <form action="post" class="payment-form">
+              <div class="tofrom">
+              <label class="form-content" style="font-size: 25px;" style="" for="no"></label>
+              <input class="form-content" style="height: 70px; border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 20px;" type="text" id="no" name="no" placeholder=" ORIGIN">
 
-<div class="footer">
-    <p class="footertext">Capstone Project Built by Akash Pansari</p>
-</div>
-</div>
-</div>
+              <p style="margin: auto;"> ↔ </p>
+
+               <label class="form-content" style="font-size: 25px;" for="to"></label>
+              <input class="form-content" style="height: 70px; border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 20px;" type="text" id="to" name="to" placeholder="  DESTINATION">
+              </div>
+              <label class="form-content" style="font-size: 25px;" for="date"></label>
+              <input class="form-content" style="height: 70px; border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 25px;" type="date" id="date" name="date" placeholder="  Choose Travel Date">
+              
+              <select name="T-class" style="height: 70px; border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 20px;" id="T-class">
+                 <option value="Choose Travel Class">Choose Travel Class</option>
+                <option value="AC FIRST CLASS">AC FIRST CLASS</option>
+                <option value="AC TWO TIER">AC TWO TIER</option>
+                <option value="AC THREE TIER">AC THREE TIER</option>
+                <option value="AC CHAIR CAR">AC CHAIR CAR</option>
+                <option value="AC EXECUTIVE CLASS">AC EXECUTIVE CLASS</option>
+              </select>
+              <select name="BookingType" style="height: 70px; border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 20px;" id="BookingType">
+                <option value="BookingType">BookingType</option>
+                <option value="GENERA">GENERAL</option>
+                <option value="TATKAL">TATKAL</option>
+                <option value="PREMIUM TATKAL">PREMIUM TATKAL</option>
+                <option value="SR. CITIZEN">SR. CITIZEN</option>
+                <option value="PHYSICALLY DISABLED">PHYSICALLY DISABLED</option>
+              </select>
+              <button class="form-content" style="font-size: 25px;border: 1px solid #6f636d;  border-radius: 15px; text-align: center; height: 70px; background-color: #392f41; color: #ebe7df;" type="submit">Search and Book Train</button>
+            </form>
+            <h5> Secured by Payora, Powered by IRCTC</h5>
+          </div>
+          </div>
+        </div>
+        </div>
 </body>
 </html>
