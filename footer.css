@@ -11,6 +11,6 @@ text-align: center;
 }
 .footertext{
     font-size: 22px;
-    font-style: italic;
+    /* font-style: italic; */
   margin: auto;
 }

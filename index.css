@@ -68,7 +68,7 @@ body {
 #text1{
   font-size: 90px;
   text-align: center;
-  color: #ebe7df;
+  color: #ccc3d0;
 }
 #text2{
 font-size: 120px;
@@ -102,9 +102,6 @@ width: 100%;
    /* border: 1px solid white; */
    border-radius: 30px;
    margin-top: 45px;
-   padding: ;
-   /* margin: 15px; */
-   /* background-color: #392f41; */
    background-color: #121212;
    object-fit: cover;
    width: 30vw;
