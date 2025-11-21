@@ -80,13 +80,6 @@ color: #ebe7df;
   height: 100%;
   object-fit: cover;
 }
-.ha2{
- grid-area: ha22;
-}
-
-.ha3{
-grid-area: ha33;
-}
 
 .useful{
   height: 800px;

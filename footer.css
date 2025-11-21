@@ -3,14 +3,13 @@
 background-color: #ccc3d0;
 border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  height: 100px;
+  height: 115px;
   width: 100%;
-
 position: absolute;
 text-align: center;
 }
 .footertext{
     font-size: 22px;
-    /* font-style: italic; */
   margin: auto;
+  
 }
