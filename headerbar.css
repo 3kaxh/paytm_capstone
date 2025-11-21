@@ -32,6 +32,10 @@ body {
   width: 10vw;
   padding: 10px;
   display: flex;
+  transition: transform 0.1s ease;
+}
+.headerele:hover{
+  transform: scale(1.05);
 }
 .headerele>a{
   text-align: center;

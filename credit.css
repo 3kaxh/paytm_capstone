@@ -1,85 +1,64 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
 .body{
-  background-image: url('Images/Untitled_design.png');
-  /* background-color: #aa9ff3; */
-  height: 100%;
+    background-color:#392f41;
+    height: 900px;
+}
+.paydiv{
+display: flex;
+/* border: 2px solid black; */
+justify-content: space-evenly;
+margin: 40px;
+}
+.paybody{
+/* border: 1px black; */
+width: 40%;
+height: 700px;
+/* background-color: blue; */
+justify-content: space-evenly;
+border-radius: 20px;
+}
+.leftsidepay{
+    /* border: 10px solid yellow; */
+    background-color: #392f41;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+.leftsidehtext{
+    text-align: left;
+    /* font-size: 40px; */
+    color: #ebe7df;
+}
+.leftsidehtext:nth-child(1){
+font-size: 80px;
+padding: none;
+}
+.leftsidehtext:nth-child(2){
+    font-size: 90px;
+}
+.leftsidehtext:nth-child(3){
+    font-size: 90px;
+}
+.leftsideptext{
+    text-align: left;
+    font-size: 25px;
+    color: #ccc3d0;
+    
+}
+.exp-button{
+  margin-top: 15px;
+  transition: transform 0.1s ease;
+}
+.exp-button:hover{
+  transform: scale(1.05);
+}
+.rightsidepay{
+    background-color:#392f41;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.rightsidepay>img{
   width: 100%;
-  object-fit: cover;
-  display: relative;
-}
-
-.header {
-  position:sticky;
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  height: 50px;
-  width: 60%;
-  top: 20px;
-  left: 20%;
-  border-radius: 50px;
-  box-sizing: border-box;
-  
-}
-.headerele {
-  background-color: orange;
-  justify-self: center;
   align-self: center;
-  text-align: center;
-  margin-left: 10px;
-  border-radius: 50px;
-  height: 40px;
-  width: 600px;
-  padding: 10px;
-  display: flex;
-}
-.logo {
-  /* border: 2px solid; */
-  width: 20%px;
-  height: 50px;
-  align-items: center;
-  margin: 0px;
-  position:absolute;
-  margin-left: 40px;
-  margin-top: 25px;
-}
-#payoraa_logo{
-  width: 120px;
-  height: 50px;
-  
-}
-.recharge{
-  background-color: grey;
-
-.recharge > a{
-  text-decoration: none;
-  color: aliceblue;
-}
-}
-.travel {
-  background-color:grey;
-}
-.credit {
-  background-color:grey;
-}
-.login {
-  background-color:grey;
-  display: absolute;
-  right: 0px;
-}
-#payorapng {
-  width: 80px;
-  height: 40px;
-  margin: auto;
 }

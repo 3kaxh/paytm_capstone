@@ -88,3 +88,9 @@ input{
     text-emphasis: none;
     padding-bottom: 20px;
 }
+.main-button{
+  transition: transform 0.1s ease;
+}
+.main-button:hover{
+  transform: scale(1.05);
+}

@@ -1,85 +1,101 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
-}
-
 .body{
-  background-image: url('Images/Untitled_design.png');
-  /* background-color: #aa9ff3; */
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  display: relative;
+    background-color:#392f41;
+    height: 900px;
+}
+.paydiv{
+display: flex;
+/* border: 2px solid black; */
+justify-content: space-evenly;
+margin: 40px;
+}
+.paybody{
+/* border: 1px black; */
+width: 40%;
+height: 700px;
+/* background-color: blue; */
+justify-content: space-evenly;
+border-radius: 20px;
+}
+.leftsidepay{
+    /* border: 10px solid yellow; */
+    background-color: #392f41;
+    justify-content: center;
+    align-content: center;
 }
 
-.header {
-  position:sticky;
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  height: 50px;
-  width: 60%;
-  top: 20px;
-  left: 20%;
-  border-radius: 50px;
-  box-sizing: border-box;
-  
+.leftsidehtext{
+    text-align: left;
+    /* font-size: 40px; */
+    color: #ebe7df;
 }
-.headerele {
-  background-color: orange;
-  justify-self: center;
-  align-self: center;
-  text-align: center;
-  margin-left: 10px;
-  border-radius: 50px;
-  height: 40px;
-  width: 600px;
-  padding: 10px;
-  display: flex;
+.leftsidehtext:nth-child(1){
+font-size: 80px;
+padding: none;
 }
-.logo {
-  /* border: 2px solid; */
-  width: 20%px;
-  height: 50px;
-  align-items: center;
-  margin: 0px;
-  position:absolute;
-  margin-left: 40px;
-  margin-top: 25px;
+.leftsidehtext:nth-child(2){
+    font-size: 50px;
 }
-#payoraa_logo{
-  width: 120px;
-  height: 50px;
-  
+.leftsideptext{
+    text-align: left;
+    font-size: 20px;
+    color: #ccc3d0;
 }
-.recharge{
-  background-color: grey;
 
-.recharge > a{
-  text-decoration: none;
-  color: aliceblue;
+.rightsidepay{
+    background-color: #ebe7df;
+    /* border: 10px solid green; */
+    border-radius: 50px;
+
+}
+.rightsidepay >h6{
+    font-size: 40px;
+    text-align: center;
+    text-emphasis: bold;
+    padding-top: 20px;
+}
+.rightsidepay form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin: auto;
+    padding: 60px;
+    /* position: absolute; */
+    label{
+        font-size: 20px;
+        text-align: left;
+    }
+input{
+    height: 20px;
+    /* font-size: 100px; */
 }
 }
-.travel {
-  background-color:grey;
+
+.form-content::placeholder{
+    color: #392f41;
+    opacity: 0.5;
+    text-align: left;
 }
-.credit {
-  background-color:grey;
+.rightsidepay >h5{
+    font-size: 20px;
+    text-align: center;
+    text-emphasis: none;
+    padding-bottom: 20px;
 }
-.login {
-  background-color:grey;
-  display: absolute;
-  right: 0px;
+.extracred{
+  display: flex;
+  gap: 15px;
+  justify-items: center;
 }
-#payorapng {
-  width: 80px;
-  height: 40px;
-  margin: auto;
+.main-button{
+  transition: transform 0.1s ease;
+}
+.main-button:hover{
+  transform: scale(1.05);
+}
+.add-button{
+  transition: transform 0.1s ease;
+}
+.add-button:hover{
+  transform: scale(1.05);
 }

@@ -25,7 +25,7 @@ body {
 }
 
 .hero{
-  height: 600px;
+  height: 650px;
   margin-top: 20px;
   opacity: 1;
   top: 20%;
@@ -35,19 +35,30 @@ body {
   border-top-right-radius: 20px;
   margin: auto;
   margin-top: 20px;
+  position: relative;
 }
 .herotabs{
  margin: 20px;
  border-top-left-radius: 60px;
  border-bottom-right-radius: 60px;
  align-content: center;
+ transition: transform 3s ease;
  /* border-radius: 20px; */
 }
+.herotabs:hover{
+  transform: scale(1.15);
+  border-bottom-left-radius: 60px;
+ border-top-right-radius: 60px;
+ border-top-left-radius: 0px;
+ border-bottom-right-radius: 0px;
+}
 .ha1{
+  top:10px;
  height: 500px;
  background-color: #121212;
  text-align: center;
  color: white;
+ position: absolute;
 }
 /* .ha1:hover{
   background-color: #a098c7;
@@ -79,23 +90,32 @@ grid-area: ha33;
 
 .useful{
   height: 800px;
-background-color:#121212;
+/* background-color:#121212; */
+background-color: #ebe7df;
 border-top-left-radius: 60px;
 border-top-right-radius: 40px;
 width: 100%;
    display: flex;
-   justify-content: center;
+   justify-content: space-evenly;
 }
 .boxs{
-   border: 1px solid white;
+   /* border: 1px solid white; */
    border-radius: 30px;
-   margin: 15px;
-   background-color: #392f41;
+   margin-top: 45px;
+   padding: ;
+   /* margin: 15px; */
+   /* background-color: #392f41; */
+   background-color: #121212;
    object-fit: cover;
    width: 30vw;
+   height: 89%;
+   transition: transform 0.1s ease;
 }
 .boxs:hover{
-  background-color:#232222;
+  /* background-color:#724760; */
+  /* background-color: #121212; */
+  /* background-color: #392f41; */
+  transform: scale(1.05);
 }
 .cc{
   grid-area: cc;
@@ -128,53 +148,4 @@ width: 100%;
   font-size: 50px;
   color: white;
   text-align: center;
-}
-.footer{
-  height: 100px;
-  width: 100%;
-background-color: gray;
-position: absolute;
-text-align: center;
-}
-.footertext{
-  font-size: 50px;
-  margin: auto;
-}
-
-
-
-
-
-main{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background-color: #000;
-  height: 100%;
-}
-
-.rechargebox{
-  width: 60vw;
-  height: 80vh;
-  border: 2px solid;
-  border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: space-evenly;
-  background-color: #a098c7;
-}
-
-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-}
-
-input{
-  width: 400px;
-  height: 30px;
 }
