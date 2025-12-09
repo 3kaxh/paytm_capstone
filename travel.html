@@ -102,7 +102,7 @@
                 <option value="SR. CITIZEN">SR. CITIZEN</option>
                 <option value="PHYSICALLY DISABLED">PHYSICALLY DISABLED</option>
               </select>
-              <button class="form-content main-button" style="font-size: 25px;border: 1px solid #6f636d;  border-radius: 15px; text-align: center; height: 70px; background-color: #392f41; color: #ebe7df;" type="submit">Search and Book Tickets</button>
+              <button class="form-content main-button" style="font-size: 25px;border: 1px solid #6f636d;  border-radius: 15px; text-align: center; height: 70px; background-color: #392f41; color: #ebe7df;" type="button">Search and Book Tickets</button>
             </form>
             <h5> Secured by Payora, Powered by IRCTC</h5>
           </div>
@@ -116,12 +116,28 @@
         </div>
 </body>
 <script>
-  const searchInput = document.getElementsByClassName("searchInput");
-const displayText = document.getElementById("displayText");
+  const bookbtn = document.querySelector(".main-button");
+  const no = document.getElementById("no");
+  const to = document.getElementById("to");
 
-searchInput.addEventListener("input", function () {
-  displayText.textContent = searchInput.value;
-});
-
+  bookbtn.addEventListener("click", function () {
+    const text = document.createElement("p");
+    text.style.textAlign = "center";
+    text.style.fontSize = "18px";
+    text.style.marginTop = "10px";  
+    if (no.value === "") {
+      text.textContent = " Enter Origin";
+      text.style.color = "red";
+    }
+    else if (to.value === "") {
+      text.textContent = "Enter destination";
+      text.style.color = "red";
+    }
+    else {
+      text.textContent = "✔ Booking Successful!";
+      text.style.color = "green";
+    }
+    document.querySelector(".payment-form").append(text);
+  });
 </script>
 </html>

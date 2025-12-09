@@ -103,18 +103,13 @@
 
   paybtn.addEventListener("click", function () {
 
-    // remove previous message if exists
-    const oldMsg = document.getElementById("msg");
-    if (oldMsg) oldMsg.remove();
-
-    // create new message element
     const text = document.createElement("p");
     text.id = "msg";
     text.style.textAlign = "center";
     text.style.fontSize = "18px";
     text.style.marginTop = "10px";
 
-    // validation
+  
     if (num.value === "" || isNaN(num.value)) {
       text.textContent = "❌ Enter a valid mobile number";
       text.style.color = "red";
@@ -132,7 +127,6 @@
       text.style.color = "green";
     }
 
-    // add below the form
     document.querySelector(".payment-form").append(text);
   });
 </script>
