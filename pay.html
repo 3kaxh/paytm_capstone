@@ -20,7 +20,7 @@
             <!-- <img src="Images/payora_transp.png" id="payoraa_logo"> -->
             <a
               href="index.html"
-              class="frijole-regular"
+              class="poppins-bold"
               style="
                 text: size 30px;
                 text-decoration: none;
@@ -33,39 +33,33 @@
           <div class="right">
             <!-- Navbar Elements -->
             <div class="headerele paymentspage currentpage">
-              <a style="text-decoration: none; class="navlinktext currentpage" href="pay.html">
+              <a style="text-decoration: none;" class="navlinktext currentpage" href="pay.html">
                 Payment
               </a>
             </div>
             <div class="headerele recharge">
-              <a style="text-decoration: none; class="navlinktext" color: white"
+              <a class="navlinktext" style="text-decoration: none;  color: white"
                 href="recharge.html">
                 Recharge
               </a>
             </div>
             <div class="headerele travel">
-              <a style="text-decoration: none; class="navlinktext"  color: white" href="travel.html"
+              <a href="travel.html" style="text-decoration: none;   color: white" class="navlinktext"
                 >Travel</a
               >
             </div>
             <div class="headerele credit">
-              <a style="text-decoration: none; class="navlinktext"  color: white" href="credit.html"
+              <a href="credit.html" style="text-decoration: none;   color: white" class="navlinktext"
                 >Credit Card</a
               >
             </div>
           </div>
           <div class="headerele login">
-            <a style="text-decoration: none; class="navlinktext"  color: white" href="login.html"
+            <a style="text-decoration: none;   color: white" class="navlinktext" href="login.html"
               >Login</a
             >
           </div>
         </div>
-
-
-
-
-
-
          <!-- header html code ends-->
           <!-- main body code here  -->
           <div class="paydiv">
@@ -84,9 +78,9 @@
               <input class="form-content" style="height: 70px; border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 25px;" type="number" id="amt" name="amt" placeholder="  Amount">
                <label class="form-content" style="font-size: 25px;" for="remarks"> Remarks</label>
               <input class="form-content" style="height: 70px;border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 25px;" type="text" id="remarks" name="remarks" placeholder="  Paying For">
-              <button class="form-content main-button" style="font-size: 25px;border: 1px solid #6f636d;  border-radius: 15px; text-align: center; height: 70px; background-color: #392f41; color: #ebe7df;" type="submit">Pay Securely</button>
+              <button class="form-content main-button" id="paybutton" style="font-size: 25px;border: 1px solid #6f636d;  border-radius: 15px; text-align: center; height: 70px; background-color: #392f41; color: #ebe7df;" type="button">Pay Securely</button>
             </form>
-            <h5> Secured by Payora, Powered by NPCI</h5>
+            <h5 > Secured by Payora, Powered by NPCI</h5>
           </div>
           </div>
           <div class="footer google-sans-flex">
@@ -95,5 +89,46 @@
             <p class="footertext">Built with ❤️ in India.</p>
         </div>
       </div>
+    <script>
+      let paybtn=document.querySelector(".main-button");
+      let upi=document.getElementById("upiid");
+      let amt=document.getElementById("amt");
+      let text=document.createElement("p");
+
+      paybtn.addEventListener("click", function () {
+  if (upi.value === "") {
+    upi.style.border = "2px solid red";
+    upi.style.backgroundColor="#ff474c"
+  } else {
+    upi.style.border = "2px solid green";
+    upi.style.backgroundColor="#88e788"
+  }
+
+  if (amt.value === "") {
+    amt.style.border = "2px solid red";
+    amt.style.backgroundColor="#ff474c"
+  } else {
+    amt.style.border = "2px solid green";
+    amt.style.backgroundColor="#88e788"
+  }
+
+  if (upi.value === "" || amt.value === "") {
+    alert("Please fill the details");
+    text.textContent="Please fill the details";
+    text.style.textAlign="center"
+     text.style.fontSize = "16px";
+    text.style.marginTop = "10px";
+    
+  } else {
+    alert("Payment Successful!");
+    text.textContent="✔ Payment Successful!";
+    text.style.textAlign="center"
+     text.style.fontSize = "16px";
+    text.style.marginTop = "10px";
+  }
+  document.querySelector(".payment-form").append(text);
+});
+
+    </script>
 </body>
 </html>

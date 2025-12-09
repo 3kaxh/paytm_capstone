@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payora</title>
+
+    <!-- GOOGLE FONTS (simplified) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- YOUR CSS FILES -->
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="headerbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <!-- HERO CSS (dynamic hero styles) -->
+    <link rel="stylesheet" href="hero.css" />
+  </head>
+
+  <body>
+    <div class="mother">
+      <div class="body">
+        <!-- NAVBAR HTML BEGINS  -->
+        <div class="header google-sans-flex">
+          <div class="logo">
+            <a
+              href="index.html"
+              class="poppins-bold"
+              style="
+                font-size: 30px;
+                text-decoration: none;
+                padding: 20px;
+                color: white;
+              "
+            >
+              Payora
+            </a>
+          </div>
+
+          <div class="right">
+            <!-- Navbar Elements -->
+            <div class="headerele paymentspage">
+              <a href="pay.html" class="navlinktext currentpage" style="text-decoration: none; color: white;">
+                Payment
+              </a>
+            </div>
+            <div class="headerele recharge">
+              <a href="recharge.html" class="navlinktext" style="text-decoration: none; color: white;">
+                Recharge
+              </a>
+            </div>
+            <div class="headerele travel">
+              <a href="travel.html" class="navlinktext" style="text-decoration: none; color: white;">
+                Travel
+              </a>
+            </div>
+            <div class="headerele credit">
+              <a href="credit.html" class="navlinktext" style="text-decoration: none; color: white;">
+                Credit Card
+              </a>
+            </div>
+          </div>
+
+          <div class="headerele login">
+            <a href="login.html" class="navlinktext" style="text-decoration: none; color: white;">
+              Login
+            </a>
+          </div>
+        </div>
+        <!-- NAVBAR ENDS  -->
+
+        <!-- HERO SECTION BEGINS -->
+        <div class="conainer">
+          <div class="hero">
+            <!-- Optional Background Video -->
+            <video class="bg-video" autoplay muted loop>
+              <!-- Change this path to your actual video -->
+              <source src="Images/bg-video.mp4" type="video/mp4" />
+            </video>
+
+            <!-- Overlay for readability -->
+            <div class="hero-overlay"></div>
+
+            <!-- Dynamic Hero Content -->
+            <div class="hero-content">
+              <!-- Side Buttons -->
+              <div class="hero-buttons">
+                <button class="hero-btn active" data-hero="pay">Payments</button>
+                <button class="hero-btn" data-hero="recharge">Recharge</button>
+                <button class="hero-btn" data-hero="travel">Travel</button>
+                <button class="hero-btn" data-hero="credit">Credit Card</button>
+              </div>
+
+              <!-- Preview Area -->
+              <div class="hero-preview">
+                <h1 id="heroTitle" class="google-sans-flex">Instant Payments</h1>
+                <p id="heroSubtitle" class="google-sans-flex">
+                  Pay in one tap, 24x7. Secure, fast and rewarding with Payora.
+                </p>
+                <img
+                  id="heroImage"
+                  src="Images/pay-hero.png"
+                  alt="Payments preview"
+                  class="hero-image"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- HERO SECTION ENDS -->
+
+          <!-- USEFUL SECTION -->
+          <div class="useful google-sans-code">
+            <div class="boxs cc">
+              <p class="textcc1 google-sans-flex">Credit Card</p>
+              <br />
+              <p class="textcc1 google-sans-flex" style="font-size: 30px">
+                Get a FD-Backed RBI Approved Credit Card
+              </p>
+              <img
+                width="500px"
+                style="padding: 50px"
+                src="Images/cc_3.png"
+                alt="Credit Card"
+              />
+            </div>
+
+            <div class="boxs rc">
+              <p class="textrc1 google-sans-flex">Recharge</p>
+              <br />
+              <p class="textrc1 google-sans-flex" style="font-size: 30px">
+                Running low? Recharge in seconds!
+              </p>
+              <img
+                width="500px"
+                style="padding: 50px"
+                src="Images/rechargenow.png"
+                alt="Recharge"
+              />
+            </div>
+
+            <div class="boxs trv">
+              <p class="texttrv1 google-sans-flex">Travel</p>
+              <br />
+              <p class="texttrv1 google-sans-flex" style="font-size: 30px">
+                Your Fav Destinations, now within Reach
+              </p>
+              <img
+                width="500px"
+                style="padding: 50px"
+                src="Images/travel.png"
+                alt="Travel"
+              />
+            </div>
+          </div>
+
+          <!-- FOOTER -->
+          <div class="footer google-sans-flex">
+            <p class="footertext">
+              © 2025 Capstone Project. Built with passion and purpose.
+            </p>
+            <p class="footertext">
+              Made for the next generation of payments — © Payora.
+            </p>
+            <p class="footertext">Built with ❤️ in India.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIMPLE JS FOR DYNAMIC HERO -->
+    <script>
+      <script>
+  // Configuration for each hero state
+  var heroConfigs = {
+    pay: {
+      title: "Instant Payments",
+      subtitle: "Pay in one tap, 24x7. Secure, fast and rewarding with Payora.",
+      img: "Images/pay-hero.png"
+    },
+    recharge: {
+      title: "Recharge in Seconds",
+      subtitle: "Top up your mobile, DTH and more in just a few clicks.",
+      img: "Images/recharge-hero.png"
+    },
+    travel: {
+      title: "Travel Made Easy",
+      subtitle: "Book your trips with smarter payments and seamless checkouts.",
+      img: "Images/travel-hero.png"
+    },
+    credit: {
+      title: "Smarter Credit for You",
+      subtitle: "FD-backed credit cards designed for students and first-time users.",
+      img: "Images/credit-hero.png"
+    }
+  };
+
+  var buttons = document.getElementsByClassName("hero-btn");
+  var titleEl = document.getElementById("heroTitle");
+  var subtitleEl = document.getElementById("heroSubtitle");
+  var imageEl = document.getElementById("heroImage");
+
+  function setActiveHero(key) {
+    var config = heroConfigs[key];
+    if (!config) return;
+
+    // Update content
+    titleEl.textContent = config.title;
+    subtitleEl.textContent = config.subtitle;
+    imageEl.src = config.img;
+
+    // Update active button
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove("active");
+      if (buttons[i].getAttribute("data-hero") === key) {
+        buttons[i].classList.add("active");
+      }
+    }
+  }
+
+  // Attach click listeners
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function () {
+      var key = this.getAttribute("data-hero");
+      setActiveHero(key);
+    });
+  }
+
+  // Initial state
+  setActiveHero("pay");
+</script>
+
+    </script>
+  </body>
+</html>

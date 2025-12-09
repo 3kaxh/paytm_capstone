@@ -38,27 +38,30 @@ body {
   position: relative;
 }
 .herotabs{
- margin: 20px;
- border-top-left-radius: 60px;
- border-bottom-right-radius: 60px;
+ /* margin: 20px; */
+ border-radius: 60px;
  align-content: center;
  transition: transform 3s ease;
+ width: 90vw;
+ /* padding: 20px; */
+ justify-content: center;
  /* border-radius: 20px; */
 }
-.herotabs:hover{
+/* .herotabs:hover{
   transform: scale(1.15);
   border-bottom-left-radius: 60px;
  border-top-right-radius: 60px;
  border-top-left-radius: 0px;
  border-bottom-right-radius: 0px;
-}
+} */
 .ha1{
   top:10px;
- height: 500px;
+ height: 600px;
  background-color: #121212;
  text-align: center;
  color: white;
  position: absolute;
+ background-image: url("Images/travelling hero.png") ;
 }
 /* .ha1:hover{
   background-color: #a098c7;
@@ -69,11 +72,13 @@ body {
   font-size: 90px;
   text-align: center;
   color: #ccc3d0;
+  font-weight: 800;
 }
 #text2{
 font-size: 120px;
 text-align: center;
 color: #ebe7df;
+font-weight: 800;
 }
 #changetheway{
   width: 100%;

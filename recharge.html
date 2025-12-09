@@ -19,7 +19,7 @@
             <!-- <img src="Images/payora_transp.png" id="payoraa_logo"> -->
             <a
               href="index.html"
-              class="frijole-regular"
+              class="poppins-bold"
               style="
                 text: size 30px;
                 text-decoration: none;
@@ -37,7 +37,7 @@
               </a>
             </div>
             <div class="headerele recharge currentpage">
-              <a style="text-decoration: none; class="navlinktext currentpage"
+              <a style="text-decoration: none;" class="navlinktext currentpage"
                 href="recharge.html">
                 Recharge
               </a>
@@ -75,15 +75,15 @@
             <h6 >⚡ INSTANT RECHARGE</h6>
             <form action="post" class="payment-form">
               <label class="form-content" style="font-size: 25px;" style="" for="no"> Enter Mobile Number</label>
-              <input class="form-content" style="height: 70px;border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 25px;" type="text" id="no" name="no" placeholder=" +91 60000 00009">
+              <input class="form-content" style="height: 70px;border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 25px;" type="text" id="no" name="no" placeholder=" +91 90000 00009">
 
-               <label class="form-content" style="font-size: 25px;" for="opeerator"> Operator</label>
+               <label class="form-content" style="font-size: 25px;" for="operator"> Operator</label>
               <input class="form-content" style="height: 70px;border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 25px;" type="text" id="operator" name="operator" placeholder="  Jio- Delhi">
 
               <label class="form-content" style="font-size: 25px;" for="amt">Recharge Plan</label>
               <input class="form-content" style="height: 70px; border: 1px solid #ccc3d0; border-radius: 15px; text-align: center; font-size: 25px;" type="number" id="amt" name="amt" placeholder="  Select Recharge Plan Amount">
               
-              <button class="form-content main-button" style="font-size: 25px;border: 1px solid #6f636d;  border-radius: 15px; text-align: center; height: 70px; background-color: #392f41; color: #ebe7df;" type="submit">Pay to Recharge in Seconds</button>
+              <button class="form-content main-button" style="font-size: 25px;border: 1px solid #6f636d;  border-radius: 15px; text-align: center; height: 70px; background-color: #392f41; color: #ebe7df;" type="button">Pay to Recharge in Seconds</button>
             </form>
             <h5> Secured by Payora, Powered by BBPS</h5>
           </div>
@@ -95,5 +95,46 @@
             <p class="footertext">Built with ❤️ in India.</p>
         </div>
         </div>
+        <script>
+  const paybtn = document.querySelector(".main-button");
+  const num = document.getElementById("no");
+  const operator = document.getElementById("operator");
+  const amt = document.getElementById("amt");
+
+  paybtn.addEventListener("click", function () {
+
+    // remove previous message if exists
+    const oldMsg = document.getElementById("msg");
+    if (oldMsg) oldMsg.remove();
+
+    // create new message element
+    const text = document.createElement("p");
+    text.id = "msg";
+    text.style.textAlign = "center";
+    text.style.fontSize = "18px";
+    text.style.marginTop = "10px";
+
+    // validation
+    if (num.value === "" || isNaN(num.value)) {
+      text.textContent = "❌ Enter a valid mobile number";
+      text.style.color = "red";
+    }
+    else if (operator.value === "") {
+      text.textContent = "❌ Please select operator";
+      text.style.color = "red";
+    }
+    else if (amt.value === "" || isNaN(amt.value) || Number(amt.value) <= 0) {
+      text.textContent = "❌ Enter a valid amount";
+      text.style.color = "red";
+    }
+    else {
+      text.textContent = "✔ Recharge Successful!";
+      text.style.color = "green";
+    }
+
+    // add below the form
+    document.querySelector(".payment-form").append(text);
+  });
+</script>
 </body>
 </html>

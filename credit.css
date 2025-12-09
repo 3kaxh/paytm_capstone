@@ -28,16 +28,20 @@ border-radius: 20px;
     text-align: left;
     /* font-size: 40px; */
     color: #ebe7df;
+    font-weight: 900;
 }
 .leftsidehtext:nth-child(1){
-font-size: 80px;
+font-size: 130px;
 padding: none;
+font-weight: 900;
 }
 .leftsidehtext:nth-child(2){
-    font-size: 90px;
+    font-size: 130px;
+    font-weight: 900;
 }
 .leftsidehtext:nth-child(3){
-    font-size: 90px;
+    font-size: 130px;
+    font-weight: 900;
 }
 .leftsideptext{
     text-align: left;
